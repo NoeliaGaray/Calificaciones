@@ -2,7 +2,7 @@ let nota1,
   nota2,
   nota3,
   promedio: number = 0;
-let nombre: string = "";
+let nombre: string;
 
 while (nombre !== "") {
   nombre = String(prompt("Ingrese el nombre del/la alumno/a: "));
@@ -24,7 +24,7 @@ while (nombre !== "") {
     nota3 <= 10
   ) {
     promedio = nota1 * 0.1 + nota2 * 0.5 + nota3 * 0.4;
-    console.log("El promedio de: ", nombre, "es:", promedio);
+    console.log("El promedio de:", nombre, "es:", promedio);
   } else {
     console.log("ERROR, ingrese valores válidos, entre 1 y 10");
   }
