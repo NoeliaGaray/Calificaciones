@@ -5,7 +5,7 @@ let nota1,
 let nombre: string = "";
 
 while (nombre !== "") {
-  nombre = prompt("Ingrese el nombre del/la alumno/a: ");
+  nombre = String(prompt("Ingrese el nombre del/la alumno/a: "));
   nota1 = Number(prompt("Ingrese nota de prácticas:"));
   nota2 = Number(prompt("Ingrese nota de problemas:"));
   nota3 = Number(prompt("Ingrese nota del teórico:"));
