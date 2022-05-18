@@ -2,10 +2,11 @@ let nota1,
   nota2,
   nota3,
   promedio: number = 0;
-let nombre: string;
+let nombre: string = "";
+
+nombre = String(prompt("Ingrese el nombre del/la alumno/a: "));
 
 while (nombre !== "") {
-  nombre = String(prompt("Ingrese el nombre del/la alumno/a: "));
   nota1 = Number(prompt("Ingrese nota de prácticas:"));
   nota2 = Number(prompt("Ingrese nota de problemas:"));
   nota3 = Number(prompt("Ingrese nota del teórico:"));
@@ -28,4 +29,5 @@ while (nombre !== "") {
   } else {
     console.log("ERROR, ingrese valores válidos, entre 1 y 10");
   }
+  nombre = String(prompt("Ingrese el nombre del/la alumno/a: "));
 }
